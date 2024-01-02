@@ -1,0 +1,39 @@
+.row__poster{
+    width: 100%;
+    object-fit: contain; /* inorder not to make the image distorted...ordering it...with in the given container display it without distortion */
+    max-height: 100px;
+    transition: transform 450ms;
+    margin-right: 10px;
+}
+
+.row__posters{
+display: flex;  /* inorder to make the movies placed horzontaly*/
+overflow-y: hidden;
+overflow-x: scroll;
+padding: 20px;
+}
+
+/* to hide the scrollbar..which is added previously*/
+.row__posters::-webkit-scrollbar{
+    display: none;
+}
+
+/* to make the images a bit larger when hover*/
+.row__poster:hover{
+transform: scale(1.08);
+}
+
+/* making Netflix originals images size--bigger */
+.row__posterLarge{
+    max-height: 250px;
+}
+.row__posterLarge:hover{
+transform: scale(1.09);
+}
+
+.row {
+    margin-left: 20px;
+    color: white; /* bewsstu yalu texts color white yhonal like Netflix ORIGINAL , Trending...*/
+    font-size: 0.8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
